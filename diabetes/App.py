@@ -6,7 +6,7 @@ import pickle
 st.title("Diabetes Prediction Application")
 st.header("Machine Learning Project")
 
-with open("DiabetesPrediction.pkl", 'rb') as file:
+with open("diabetes/DiabetesPrediction.pkl", 'rb') as file:
     loaded_model = pickle.load(file)
 
 Pregnancy = st.number_input("Pregnancies",min_value=0,max_value=17)
